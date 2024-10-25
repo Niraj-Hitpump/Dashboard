@@ -1,38 +1,160 @@
-.App {
-  text-align: center;
+.app {
+  display: flex;
+  min-height: 100vh; /* Ensure it covers full height */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebar {
+  width: 200px;
+  background-color: #e9eff6;
+  padding: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns for the stats widgets */
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.reports-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* 2 columns, larger for LeadReports */
+  gap: 20px;
+  align-items: start; /* Aligns both the reports and tools at the top */
+}
+
+.lead-reports-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.report-generating-tools-container {
+  display: flex;
+  flex-direction: column; /* Stack ReportGeneratingTools and PriceRangeGraph */
+  gap: 20px;
+}
+
+.report-generating-tools-container > * {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.price-range-graph-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.reports-section {
+  display: grid;
+  grid-template-columns: 50% 50%; /* 50% for LeadReports and 50% for the right column */
+  gap: 20px;
+  align-items: start; /* Aligns both sections at the top */
+}
+
+.lead-reports-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.report-generating-tools-container {
+  display: flex;
+  flex-direction: column; /* Stack ReportGeneratingTools and PriceRangeGraph */
+  gap: 20px;
+}
+
+.report-generating-tools-container > * {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* for piechart */
+/* Lead Reports Section */
+.lead-reports-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #e0e0e0; /* Light grey border */
+ 
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.lead-reports-title {
+  margin-bottom: 15px;
+  font-size: 1.4em;
+  font-weight: 500;
+  color: #333333; /* Darker grey for the title */
+  text-transform: lowercase;
+  border-bottom: 1px solid #d3d3d3; /* Light grey bottom border for the title */
+  padding-bottom: 10px;
+  width: 100%;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chart-legend-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.PieChart {
+  margin-right: 15px;
+}
+
+.legend-plates {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.legend-text {
+  font-size: 14px;
+  color: #555; /* Muted grey text */
 }

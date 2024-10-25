@@ -1,0 +1,51 @@
+.sidebar {
+    width: 220px;
+    background-color: #e9eff6;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .branding {
+    margin-bottom: 20px;
+    text-align: center;
+    color: aqua;
+  }
+  
+  .branding h2 {
+    font-size: 24px;
+    color: rgb(34, 137, 137);
+  }
+  
+  .menu {
+    flex-grow: 1;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    display: flex;  /* Align icons and text horizontally */
+    align-items: center;
+    margin: 10px 0;
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
+    padding: 10px 10px;
+  }
+  
+  .menu li:hover {
+    color: #007bff;
+  }
+  
+  .icon {
+    margin-right: 10px;  /* Add space between icon and text */
+    font-size: 18px;
+    color: #007bff;  /* Icon color */
+  }
+  

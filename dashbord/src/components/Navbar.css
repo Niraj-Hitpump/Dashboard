@@ -1,0 +1,26 @@
+.navbar {
+  background-color: #fff;
+  height: 50px; /* Reduced height */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px; /* Reduced padding */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+  height: 30px; /* Reduced height */
+  width: 220px; /* Adjusted width */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 8px; /* Reduced padding */
+  font-size: 12px; /* Reduced font size */
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    width: 150px; /* Adjusted width for smaller screens */
+  }
+}
